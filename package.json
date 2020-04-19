@@ -1,0 +1,23 @@
+{
+  "name": "nginx-log-report",
+  "version": "1.0.0",
+  "description": "Reads a NGINX logfile and generates a HTML file displaying a map plotting every machine that accessed the server, aswell as access count for each country and successful requests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Stacked",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stacced/nginx-log-report"
+  },
+  "dependencies": {
+    "@maxmind/geoip2-node": "^1.4.0",
+    "@robojones/nginx-log-parser": "0.0.6",
+    "jsdom": "^16.2.2",
+    "node-fetch": "^2.6.0"
+  }
+}
